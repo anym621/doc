@@ -1,0 +1,830 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>setLocationFun · 闪影</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="影">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="init.html" />
+    
+    
+    <link rel="prev" href="../function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    闪影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../mapthis.html">
+            
+                <a href="../../mapthis.html">
+            
+                    
+                    类 Map/this
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../property.html">
+            
+                <a href="../property.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../property/maprect.html">
+            
+                <a href="../property/maprect.html">
+            
+                    
+                    MapRect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.2.1" data-path="setlocationfun.html">
+            
+                <a href="setlocationfun.html">
+            
+                    
+                    setLocationFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="init.html">
+            
+                <a href="init.html">
+            
+                    
+                    Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="loading.html">
+            
+                <a href="loading.html">
+            
+                    
+                    Loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="onloadymovieclip.html">
+            
+                <a href="onloadymovieclip.html">
+            
+                    
+                    onLoadYMovieClip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="onloadsprite.html">
+            
+                <a href="onloadsprite.html">
+            
+                    
+                    onLoadSprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="onloadspriteparent.html">
+            
+                <a href="onloadspriteparent.html">
+            
+                    
+                    onLoadSpriteParent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="killymovieclip.html">
+            
+                <a href="killymovieclip.html">
+            
+                    
+                    killYMovieClip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="killsprite.html">
+            
+                <a href="killsprite.html">
+            
+                    
+                    killSprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="killspriteparent.html">
+            
+                <a href="killspriteparent.html">
+            
+                    
+                    killSpriteParent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="setspriteframe.html">
+            
+                <a href="setspriteframe.html">
+            
+                    
+                    setSpriteFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="getnodesbylocation.html">
+            
+                <a href="getnodesbylocation.html">
+            
+                    
+                    getNodesByLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="getnodeparentbyname.html">
+            
+                <a href="getnodeparentbyname.html">
+            
+                    
+                    getNodeParentByName
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="getnodeparentbysprite.html">
+            
+                <a href="getnodeparentbysprite.html">
+            
+                    
+                    getNodeParentBySprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="gettopnodebylocation.html">
+            
+                <a href="gettopnodebylocation.html">
+            
+                    
+                    getTopNodeByLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="getlayerrectfun.html">
+            
+                <a href="getlayerrectfun.html">
+            
+                    
+                    getLayerRectFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="getlayernodefun.html">
+            
+                <a href="getlayernodefun.html">
+            
+                    
+                    getLayerNodeFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="addmapnode.html">
+            
+                <a href="addmapnode.html">
+            
+                    
+                    addMapNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="removemapnode.html">
+            
+                <a href="removemapnode.html">
+            
+                    
+                    removeMapNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.19" data-path="killnodepool.html">
+            
+                <a href="killnodepool.html">
+            
+                    
+                    killNodePool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.20" data-path="removeall.html">
+            
+                <a href="removeall.html">
+            
+                    
+                    removeAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.21" data-path="gettag.html">
+            
+                <a href="gettag.html">
+            
+                    
+                    getTag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.22" data-path="setmaplocation.html">
+            
+                <a href="setmaplocation.html">
+            
+                    
+                    setMapLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.23" data-path="getshownode.html">
+            
+                <a href="getshownode.html">
+            
+                    
+                    getShowNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.24" data-path="setymovieclipframe.html">
+            
+                <a href="setymovieclipframe.html">
+            
+                    
+                    setYMovieClipFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.25" data-path="getmapnodeobj.html">
+            
+                <a href="getmapnodeobj.html">
+            
+                    
+                    getMapNodeObj
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../ymovieclip.html">
+            
+                <a href="../../ymovieclip.html">
+            
+                    
+                    类 YMovieClip
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../YMovieClip/YProperty.html">
+            
+                <a href="../../YMovieClip/YProperty.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../YMovieClip/YProperty/currentframe.html">
+            
+                <a href="../../YMovieClip/YProperty/currentframe.html">
+            
+                    
+                    currentFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../YMovieClip/YFunction.html">
+            
+                <a href="../../YMovieClip/YFunction.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../YMovieClip/YFunction/stop.html">
+            
+                <a href="../../YMovieClip/YFunction/stop.html">
+            
+                    
+                    stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../YMovieClip/YFunction/play.html">
+            
+                <a href="../../YMovieClip/YFunction/play.html">
+            
+                    
+                    play
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../YMovieClip/YFunction/gotoandstop.html">
+            
+                <a href="../../YMovieClip/YFunction/gotoandstop.html">
+            
+                    
+                    gotoAndStop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../YMovieClip/YFunction/gotoandplay.html">
+            
+                <a href="../../YMovieClip/YFunction/gotoandplay.html">
+            
+                    
+                    gotoAndPlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../../YMovieClip/YFunction/seteventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/seteventfun.html">
+            
+                    
+                    setEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../../YMovieClip/YFunction/addeventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/addeventfun.html">
+            
+                    
+                    addEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../../YMovieClip/YFunction/deletealleventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/deletealleventfun.html">
+            
+                    
+                    deleteAllEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../../YMovieClip/YFunction/deleteeventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/deleteeventfun.html">
+            
+                    
+                    deleteEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >setLocationFun</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="setlocationfun">setLocationFun</h1>
+<p><code>setLocationFun(X&#xFF1A;Number=null&#xFF0C;Y&#xFF1A;Number=null&#xFF0C;&#x56FE;&#x5C42;&#x540D;&#xFF1A;String=&#x2019;this&#x2018;)</code></p>
+<p><strong> &#x63CF;&#x8FF0;&#xFF1A;</strong></p>
+<ul>
+<li>&#x66F4;&#x6539;&#x4E3B;Node&#x7684;XY&#xFF0C;&#x53EF;&#x4EE5;&#x5355;&#x7EAF;
+&#x586B;
+&#x5199;X&#x6216;Y&#x4E4B;&#x4E00;&#x5C5E;&#x6027;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;null&#xFF0C;&#x4EE3;&#x8868;&#x4E0D;&#x4F1A;&#x66F4;&#x6539;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x4EE3;&#x8868;&#x8981;&#x79FB;&#x52A8;&#x7684;&#x56FE;&#x5C42;&#x540D;&#xFF0C;&#x8981;&#x4E0E;&#x9ED1;&#x5C0F;&#x5B69;&#x4E2D;&#x6240;&#x8BBE;&#x7F6E;&#x7684;&#x56FE;&#x5C42;&#x540D;&#x4E00;
+&#x81F4;
+&#xFF08;&#x6CE8;&#x610F;&#x9ED1;&#x5C0F;&#x5B69;&#x9ED8;&#x8BA4;&#x7684;&#x56FE;&#x5C42;&#x540D;&#x4E3A;&#x201C;&#x56FE;[&#x7A7A;&#x683C;]&#x5C42;[&#x7A7A;&#x683C;]1&#x201D;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x586B;&#x5199;&#x9ED8;&#x8BA4;&#x4E3A;&#x201C;this&#x201D;&#xFF0C;&#x4EE3;&#x8868;&#x6574;&#x4E2A;&#x79FB;&#x52A8;&#x3002;</li>
+<li>&#x6B64;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5728;Init&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x751F;&#x6548;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x5728;&#x4E4B;&#x524D;&#x66F4;&#x6539;XY&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;
+&#x9ED1;&#x5C0F;&#x5B69;&#x4E2D;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x65D7;&#xFF0C;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x66F4;&#x6539;&#x4E3B;Node&#x5C5E;&#x6027;&#x3002;</li>
+</ul>
+<p><strong>&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre><code class="lang-javascript">   setLocationFun(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-string">&apos;&#x56FE;&#x5C42;1&apos;</span>);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../function.html" class="navigation navigation-prev " aria-label="Previous page: 方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="init.html" class="navigation navigation-next " aria-label="Next page: Init">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"setLocationFun","level":"1.2.2.1","depth":3,"next":{"title":"Init","level":"1.2.2.2","depth":3,"path":"mapthis/function/init.md","ref":"mapthis/function/init.md","articles":[]},"previous":{"title":"方法","level":"1.2.2","depth":2,"path":"mapthis/function.md","ref":"mapthis/function.md","articles":[{"title":"setLocationFun","level":"1.2.2.1","depth":3,"path":"mapthis/function/setlocationfun.md","ref":"mapthis/function/setlocationfun.md","articles":[]},{"title":"Init","level":"1.2.2.2","depth":3,"path":"mapthis/function/init.md","ref":"mapthis/function/init.md","articles":[]},{"title":"Loading","level":"1.2.2.3","depth":3,"path":"mapthis/function/loading.md","ref":"mapthis/function/loading.md","articles":[]},{"title":"onLoadYMovieClip","level":"1.2.2.4","depth":3,"path":"mapthis/function/onloadymovieclip.md","ref":"mapthis/function/onloadymovieclip.md","articles":[]},{"title":"onLoadSprite","level":"1.2.2.5","depth":3,"path":"mapthis/function/onloadsprite.md","ref":"mapthis/function/onloadsprite.md","articles":[]},{"title":"onLoadSpriteParent","level":"1.2.2.6","depth":3,"path":"mapthis/function/onloadspriteparent.md","ref":"mapthis/function/onloadspriteparent.md","articles":[]},{"title":"killYMovieClip","level":"1.2.2.7","depth":3,"path":"mapthis/function/killymovieclip.md","ref":"mapthis/function/killymovieclip.md","articles":[]},{"title":"killSprite","level":"1.2.2.8","depth":3,"path":"mapthis/function/killsprite.md","ref":"mapthis/function/killsprite.md","articles":[]},{"title":"killSpriteParent","level":"1.2.2.9","depth":3,"path":"mapthis/function/killspriteparent.md","ref":"mapthis/function/killspriteparent.md","articles":[]},{"title":"setSpriteFrame","level":"1.2.2.10","depth":3,"path":"mapthis/function/setspriteframe.md","ref":"mapthis/function/setspriteframe.md","articles":[]},{"title":"getNodesByLocation","level":"1.2.2.11","depth":3,"path":"mapthis/function/getnodesbylocation.md","ref":"mapthis/function/getnodesbylocation.md","articles":[]},{"title":"getNodeParentByName","level":"1.2.2.12","depth":3,"path":"mapthis/function/getnodeparentbyname.md","ref":"mapthis/function/getnodeparentbyname.md","articles":[]},{"title":"getNodeParentBySprite","level":"1.2.2.13","depth":3,"path":"mapthis/function/getnodeparentbysprite.md","ref":"mapthis/function/getnodeparentbysprite.md","articles":[]},{"title":"getTopNodeByLocation","level":"1.2.2.14","depth":3,"path":"mapthis/function/gettopnodebylocation.md","ref":"mapthis/function/gettopnodebylocation.md","articles":[]},{"title":"getLayerRectFun","level":"1.2.2.15","depth":3,"path":"mapthis/function/getlayerrectfun.md","ref":"mapthis/function/getlayerrectfun.md","articles":[]},{"title":"getLayerNodeFun","level":"1.2.2.16","depth":3,"path":"mapthis/function/getlayernodefun.md","ref":"mapthis/function/getlayernodefun.md","articles":[]},{"title":"addMapNode","level":"1.2.2.17","depth":3,"path":"mapthis/function/addmapnode.md","ref":"mapthis/function/addmapnode.md","articles":[]},{"title":"removeMapNode","level":"1.2.2.18","depth":3,"path":"mapthis/function/removemapnode.md","ref":"mapthis/function/removemapnode.md","articles":[]},{"title":"killNodePool","level":"1.2.2.19","depth":3,"path":"mapthis/function/killnodepool.md","ref":"mapthis/function/killnodepool.md","articles":[]},{"title":"removeAll","level":"1.2.2.20","depth":3,"path":"mapthis/function/removeall.md","ref":"mapthis/function/removeall.md","articles":[]},{"title":"getTag","level":"1.2.2.21","depth":3,"path":"mapthis/function/gettag.md","ref":"mapthis/function/gettag.md","articles":[]},{"title":"setMapLocation","level":"1.2.2.22","depth":3,"path":"mapthis/function/setmaplocation.md","ref":"mapthis/function/setmaplocation.md","articles":[]},{"title":"getShowNode","level":"1.2.2.23","depth":3,"path":"mapthis/function/getshownode.md","ref":"mapthis/function/getshownode.md","articles":[]},{"title":"setYMovieClipFrame","level":"1.2.2.24","depth":3,"path":"mapthis/function/setymovieclipframe.md","ref":"mapthis/function/setymovieclipframe.md","articles":[]},{"title":"getMapNodeObj","level":"1.2.2.25","depth":3,"path":"mapthis/function/getmapnodeobj.md","ref":"mapthis/function/getmapnodeobj.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","splitter","-lunr","-search","search-plus","-sharing","donate","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"donate":{"alipay":"http://www.xiaoheiwang.com/docs/images/alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://www.xiaoheiwang.com/docs/images/wechatpay.png","wechatText":"微信打赏"},"toggle-chapters":{},"splitter":{},"search-plus":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"影","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"闪影","language":"zh-hans","gitbook":"*","description":"闪影地图编辑器"},"file":{"path":"mapthis/function/setlocationfun.md","mtime":"2018-07-22T09:20:06.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-22T12:56:45.799Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

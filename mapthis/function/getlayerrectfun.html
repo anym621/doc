@@ -1,0 +1,822 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>getLayerRectFun · 闪影</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="影">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="getlayernodefun.html" />
+    
+    
+    <link rel="prev" href="gettopnodebylocation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    闪影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../mapthis.html">
+            
+                <a href="../../mapthis.html">
+            
+                    
+                    类 Map/this
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../property.html">
+            
+                <a href="../property.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../property/maprect.html">
+            
+                <a href="../property/maprect.html">
+            
+                    
+                    MapRect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="setlocationfun.html">
+            
+                <a href="setlocationfun.html">
+            
+                    
+                    setLocationFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="init.html">
+            
+                <a href="init.html">
+            
+                    
+                    Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="loading.html">
+            
+                <a href="loading.html">
+            
+                    
+                    Loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="onloadymovieclip.html">
+            
+                <a href="onloadymovieclip.html">
+            
+                    
+                    onLoadYMovieClip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="onloadsprite.html">
+            
+                <a href="onloadsprite.html">
+            
+                    
+                    onLoadSprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="onloadspriteparent.html">
+            
+                <a href="onloadspriteparent.html">
+            
+                    
+                    onLoadSpriteParent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="killymovieclip.html">
+            
+                <a href="killymovieclip.html">
+            
+                    
+                    killYMovieClip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="killsprite.html">
+            
+                <a href="killsprite.html">
+            
+                    
+                    killSprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="killspriteparent.html">
+            
+                <a href="killspriteparent.html">
+            
+                    
+                    killSpriteParent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="setspriteframe.html">
+            
+                <a href="setspriteframe.html">
+            
+                    
+                    setSpriteFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="getnodesbylocation.html">
+            
+                <a href="getnodesbylocation.html">
+            
+                    
+                    getNodesByLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="getnodeparentbyname.html">
+            
+                <a href="getnodeparentbyname.html">
+            
+                    
+                    getNodeParentByName
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="getnodeparentbysprite.html">
+            
+                <a href="getnodeparentbysprite.html">
+            
+                    
+                    getNodeParentBySprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="gettopnodebylocation.html">
+            
+                <a href="gettopnodebylocation.html">
+            
+                    
+                    getTopNodeByLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.15" data-path="getlayerrectfun.html">
+            
+                <a href="getlayerrectfun.html">
+            
+                    
+                    getLayerRectFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="getlayernodefun.html">
+            
+                <a href="getlayernodefun.html">
+            
+                    
+                    getLayerNodeFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="addmapnode.html">
+            
+                <a href="addmapnode.html">
+            
+                    
+                    addMapNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="removemapnode.html">
+            
+                <a href="removemapnode.html">
+            
+                    
+                    removeMapNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.19" data-path="killnodepool.html">
+            
+                <a href="killnodepool.html">
+            
+                    
+                    killNodePool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.20" data-path="removeall.html">
+            
+                <a href="removeall.html">
+            
+                    
+                    removeAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.21" data-path="gettag.html">
+            
+                <a href="gettag.html">
+            
+                    
+                    getTag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.22" data-path="setmaplocation.html">
+            
+                <a href="setmaplocation.html">
+            
+                    
+                    setMapLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.23" data-path="getshownode.html">
+            
+                <a href="getshownode.html">
+            
+                    
+                    getShowNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.24" data-path="setymovieclipframe.html">
+            
+                <a href="setymovieclipframe.html">
+            
+                    
+                    setYMovieClipFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.25" data-path="getmapnodeobj.html">
+            
+                <a href="getmapnodeobj.html">
+            
+                    
+                    getMapNodeObj
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../ymovieclip.html">
+            
+                <a href="../../ymovieclip.html">
+            
+                    
+                    类 YMovieClip
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../YMovieClip/YProperty.html">
+            
+                <a href="../../YMovieClip/YProperty.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../YMovieClip/YProperty/currentframe.html">
+            
+                <a href="../../YMovieClip/YProperty/currentframe.html">
+            
+                    
+                    currentFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../YMovieClip/YFunction.html">
+            
+                <a href="../../YMovieClip/YFunction.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../YMovieClip/YFunction/stop.html">
+            
+                <a href="../../YMovieClip/YFunction/stop.html">
+            
+                    
+                    stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../YMovieClip/YFunction/play.html">
+            
+                <a href="../../YMovieClip/YFunction/play.html">
+            
+                    
+                    play
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../YMovieClip/YFunction/gotoandstop.html">
+            
+                <a href="../../YMovieClip/YFunction/gotoandstop.html">
+            
+                    
+                    gotoAndStop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../YMovieClip/YFunction/gotoandplay.html">
+            
+                <a href="../../YMovieClip/YFunction/gotoandplay.html">
+            
+                    
+                    gotoAndPlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../../YMovieClip/YFunction/seteventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/seteventfun.html">
+            
+                    
+                    setEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../../YMovieClip/YFunction/addeventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/addeventfun.html">
+            
+                    
+                    addEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../../YMovieClip/YFunction/deletealleventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/deletealleventfun.html">
+            
+                    
+                    deleteAllEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../../YMovieClip/YFunction/deleteeventfun.html">
+            
+                <a href="../../YMovieClip/YFunction/deleteeventfun.html">
+            
+                    
+                    deleteEventFun
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >getLayerRectFun</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="getlayerrectfun">getLayerRectFun</h1>
+<p><code>getLayerRectFun\(&#x56FE;&#x5C42;&#x540D;&#xFF1A;String\)&#x8FD4;&#x56DE;:cc.Rect</code></p>
+<p> <strong>&#x63CF;&#x8FF0;&#xFF1A;</strong></p>
+<p>  &#x83B7;&#x5F97;&#x56FE;&#x5C42;&#x8DDD;&#x79BB;&#x4E2D;&#x5FC3;&#x70B9;&#x7684;&#x5B9E;&#x9645;&#x50CF;&#x7D20;&#x533A;&#x57DF;&#xFF0C;&#x6CE8;&#x610F;getLayerRectFun&#x8FD4;&#x56DE;&#x4E3A;&#x6B63;&#x5E38;&#x5750;&#x6807;&#x7CFB;&#x3002;&#x5373;Y&#x5750;&#x6807;&#x5411;&#x4E0B;&#x4E3A;&#x6B63;&#xFF0C;&#x5411;&#x4E0A;&#x4E3A;&#x8D1F;&#x3002;&#x5982;&#x679C;&#x8981;&#x6539;&#x6210;CC&#x5750;&#x6807;&#xFF0C;&#x53EA;&#x9700;&#x5C06;Y*=-1&#x5373;&#x53EF;&#xFF0C;&#x5176;&#x4ED6;&#x4E0D;&#x53D8;&#x3002;</p>
+<p> <strong>&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.mapjs=<span class="hljs-keyword">this</span>.MapNode.getComponent(<span class="hljs-keyword">this</span>.MapStr);
+<span class="hljs-keyword">var</span> rect=<span class="hljs-keyword">this</span>.mapjs.getLayerRectFun(&#x201C;&#x56FE; &#x5C42; <span class="hljs-number">1</span>&#x201D;);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gettopnodebylocation.html" class="navigation navigation-prev " aria-label="Previous page: getTopNodeByLocation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="getlayernodefun.html" class="navigation navigation-next " aria-label="Next page: getLayerNodeFun">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"getLayerRectFun","level":"1.2.2.15","depth":3,"next":{"title":"getLayerNodeFun","level":"1.2.2.16","depth":3,"path":"mapthis/function/getlayernodefun.md","ref":"mapthis/function/getlayernodefun.md","articles":[]},"previous":{"title":"getTopNodeByLocation","level":"1.2.2.14","depth":3,"path":"mapthis/function/gettopnodebylocation.md","ref":"mapthis/function/gettopnodebylocation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","splitter","-lunr","-search","search-plus","-sharing","donate","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"donate":{"alipay":"http://www.xiaoheiwang.com/docs/images/alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"http://www.xiaoheiwang.com/docs/images/wechatpay.png","wechatText":"微信打赏"},"toggle-chapters":{},"splitter":{},"search-plus":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"影","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"闪影","language":"zh-hans","gitbook":"*","description":"闪影地图编辑器"},"file":{"path":"mapthis/function/getlayerrectfun.md","mtime":"2018-07-22T09:20:05.977Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-22T12:56:45.799Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
